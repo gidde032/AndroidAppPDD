@@ -17,6 +17,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunnerArguments["disableAnalytics"] = "true"
+    }
+
+    testOptions {
+        animationsDisabled = true
     }
 
     buildTypes {
@@ -50,4 +55,10 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.androidx.runner)
+    androidTestImplementation(libs.androidx.rules)
+    androidTestImplementation(libs.androidx.junit.ktx)
+    androidTestImplementation("androidx.test:core:1.5.0")
+    androidTestImplementation("androidx.test:core-ktx:1.5.0")
+    implementation(libs.coil)
 }
