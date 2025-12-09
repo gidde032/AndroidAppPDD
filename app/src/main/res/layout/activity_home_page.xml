@@ -15,18 +15,69 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <ImageView
+        android:id="@+id/pokeballImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="Pokeball"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/welcomeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tyranitar says 'wsp gang'"
-        android:textSize="28sp"
-        android:textColor="#B8B8B8"
-        android:fontFamily="sans-serif-light"
+        android:text="a pokemon game"
+        android:textSize="36sp"
+        android:textColor="#FFCB05"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:shadowColor="#3D7DCA"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="2"
         android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@id/tyranitarImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guess the names of 5 Pokemon!\nType the name exactly as shown."
+        android:textSize="18sp"
+        android:textColor="#B8B8B8"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintTop_toBottomOf="@id/tyranitarImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/startGameButton"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:text="START GAME"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:backgroundTint="#4A4A4A"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        app:cornerRadius="12dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/instructionText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

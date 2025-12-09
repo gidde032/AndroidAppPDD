@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    android:padding="32dp">
+
+    <TextView
+        android:id="@+id/gameOverTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Over!"
+        android:textSize="42sp"
+        android:textColor="#B8B8B8"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/resultText"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="32dp" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Great job!"
+        android:textSize="28sp"
+        android:textColor="#B8B8B8"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/gameOverTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/finalScoreText"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/finalScoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You got 4 out of 5 correct!"
+        android:textSize="22sp"
+        android:textColor="#B8B8B8"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/resultText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/playAgainButton"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/playAgainButton"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:text="PLAY AGAIN"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:backgroundTint="#4A4A4A"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/finalScoreText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/homeButton"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:text="HOME"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:letterSpacing="0.1"
+        android:backgroundTint="#3A3A3A"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        app:cornerRadius="12dp"
+        app:layout_constraintTop_toBottomOf="@id/playAgainButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

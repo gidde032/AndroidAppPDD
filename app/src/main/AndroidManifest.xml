@@ -23,6 +23,14 @@
             android:name=".HomePageActivity"
             android:exported="false" />
 
+        <activity
+            android:name=".GameActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GameOverActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
